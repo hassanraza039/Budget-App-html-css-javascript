@@ -1,0 +1,84 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.budget_app{
+    padding-top: 100px;
+    margin-top: 100px;
+    background-color: antiquewhite;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.budget_container{
+    /* border: 2px solid black; */
+    background-color: white;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.input_budget{
+    width: 200px;
+}
+.set_budget{
+    width: 100px;
+    background-color: blue;
+    color: white;
+}
+.Expense_container{
+    /* border: 2px solid black; */
+    background-color: white;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.input_expense1{
+    width: 200px;
+}.input_expense2{
+    width: 200px;
+}
+.set_expense{
+    width: 100px;
+    background-color: blue;
+    color: white;
+}
+.balance_container{
+    background-color: rgb(51, 13, 220);
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 20px;
+
+}
+.expense_div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.p_budget{
+    color:white ;
+    width: 100px;
+}
+.p_text{
+    color:white;
+    background-color: black;
+    width: 70px;
+}
+.list_container{
+    background-color: antiquewhite;
+    max-width: 1200px;
+    margin: auto;
+}
+.expense_list{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.list_p{
+    margin-left: 170px;
+}

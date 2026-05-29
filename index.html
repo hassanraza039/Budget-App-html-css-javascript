@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script defer src="./app.js"></script>
+</head>
+<body>
+    <div class="budget_app">
+    <div class="budget_container">
+        <label for="" class="budget">Budget</label>
+        <input type="number" class="input_budget" id="budget_total" placeholder="Enter Total Amount">
+        <button class="set_budget" onclick="totalAmount();">Set Button</button>
+    </div>
+    <div class="Expense_container">
+        <label for="" class="expense">Expenses</label>
+        <input type="text" class="input_expense1" placeholder="Enter Expense">
+        <input type="number" class="input_expense2" placeholder="Enter Expense Amount">
+        <button class="set_expense">Check amount</button>
+    </div>
+    </div>
+    <div class="balance_container">
+        <div class="expense_div">
+        <p class="p_budget" id="budget_total">Total Budget</p>
+        <input type="number" class="p_text">
+        </div>
+        <div class="expense_div">
+        <p class="p_budget">Expenses</p>
+        <input type="number" class="p_text">
+        </div>
+        <div class="expense_div">
+        <p class="p_budget">Balance</p>
+        <input type="number" class="p_text">
+        </div>
+    </div>
+    <div class="list_container">
+        <p class="list_p">Expense List</p>
+        <div class="expense_list">
+            <input type="text">
+            <input type="number">
+            <i class="fa-solid fa-pen-to-square"></i>
+            <i class="fa-solid fa-trash"></i>
+        </div>
+    </div>
+</body>
+</html>
