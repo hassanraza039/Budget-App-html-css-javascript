@@ -9,6 +9,7 @@
     <script defer src="./app.js"></script>
 </head>
 <body>
+    <div class="container">
     <div class="budget_app">
     <div class="budget_container">
         <label for="" class="budget">Budget</label>
@@ -17,33 +18,31 @@
     </div>
     <div class="Expense_container">
         <label for="" class="expense">Expenses</label>
-        <input type="text" class="input_expense1" placeholder="Enter Expense">
-        <input type="number" class="input_expense2" placeholder="Enter Expense Amount">
-        <button class="set_expense">Check amount</button>
+        <input type="text" class="input_expense1" id="expense_text" placeholder="Enter Expense">
+        <input type="number" class="input_expense2" id="expense_number" placeholder="Enter Expense Amount">
+        <button class="set_expense" onclick="setExpense();">Check amount</button>
     </div>
     </div>
+    </div>
+    <br>
     <div class="balance_container">
-        <div class="expense_div">
-        <p class="p_budget" id="budget_total">Total Budget</p>
-        <input type="number" class="p_text">
+        <div>
+            <p>Total Budget</p>
+            <span id="amount_budget">0</span>
         </div>
-        <div class="expense_div">
-        <p class="p_budget">Expenses</p>
-        <input type="number" class="p_text">
+        <div>
+            <p>Expense </p>
+            <span id="amount_expense">0</span>
         </div>
-        <div class="expense_div">
-        <p class="p_budget">Balance</p>
-        <input type="number" class="p_text">
-        </div>
-    </div>
-    <div class="list_container">
-        <p class="list_p">Expense List</p>
-        <div class="expense_list">
-            <input type="text">
-            <input type="number">
-            <i class="fa-solid fa-pen-to-square"></i>
-            <i class="fa-solid fa-trash"></i>
+        <div>
+            <p>Balance</p>
+            <span id="amount_balance">0</span>
         </div>
     </div>
+    <br>
+    <div class="expense_list" id="expense_list">
+    <h3>Expense List</h3>
+</div>
+</div>
 </body>
 </html>
